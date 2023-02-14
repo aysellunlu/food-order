@@ -12,9 +12,7 @@ const Cart = (props) => {
   );
 
   return (
-    //en dıştaki divler için UI içinde Modal var. 
-    //Modal düzgün çalışmıyor muhtemel problemi ReactDOM import ederken react-dom kütüphanesinde problem var.
-    <div>
+    <Modal>
       {cartItems}
       <div className={classes.total}>
         <span>Total Amount</span>
@@ -24,7 +22,7 @@ const Cart = (props) => {
         <button className={classes["button--alt"]}>Close</button>
         <button className={classes.button}>Order</button>
       </div>
-    </div>
+    </Modal>
   );
 };
 
